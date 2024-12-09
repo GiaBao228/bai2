@@ -1,0 +1,180 @@
+/* General page styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f4f7; /* Light off-white background for a more elegant look */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Title styling */
+h2 {
+    text-align: center;
+    color: #ff7f50; /* Coral color for the title for a rich and energetic tone */
+    padding: 40px 0;
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    display: inline-block;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Glamorous shadow effect */
+    border-bottom: 3px solid #ff7f50; /* Adds a strong bottom border to the title */
+}
+
+/* Styling for the table */
+.table {
+    width: 90%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); /* Elegant drop shadow */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+    .table th, .table td {
+        padding: 20px;
+        text-align: center;
+        font-size: 18px;
+        border-bottom: 2px solid #ddd;
+    }
+
+    /* Table header styling */
+    .table th {
+        background-color: #333; /* Dark background for header */
+        color: #fff;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    /* Table cell styling */
+    .table td {
+        background-color: #f9f9f9; /* Light grey for row cells */
+        color: #333;
+        font-size: 16px;
+        border-left: 1px solid #ddd;
+    }
+
+    /* Hover effect for rows */
+    .table tr:hover {
+        background-color: #f1f1f1; /* Subtle hover effect */
+        cursor: pointer;
+    }
+
+/* Button styling */
+.btn {
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* View button (Luxurious gold) */
+.btn-view {
+    background-color: #ffd700; /* Gold color for View button */
+    color: #fff;
+    border: 2px solid #ffd700;
+}
+
+    .btn-view:hover {
+        background-color: #ffcc00; /* Darker gold on hover */
+        color: #fff;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+/* Edit button (Luxurious emerald) */
+.btn-edit {
+    background-color: #2ecc71; /* Elegant emerald green */
+    color: #fff;
+    border: 2px solid #2ecc71;
+}
+
+    .btn-edit:hover {
+        background-color: #27ae60; /* Darker emerald on hover */
+        color: #fff;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+/* Delete button (Luxurious ruby red) */
+.btn-delete {
+    background-color: #e74c3c; /* Luxurious ruby red */
+    color: #fff;
+    border: 2px solid #e74c3c;
+}
+
+    .btn-delete:hover {
+        background-color: #c0392b; /* Darker ruby red on hover */
+        color: #fff;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+/* Add Product button (Platinum) */
+.btn-primary {
+    background-color: #e1e1e1; /* Light platinum color */
+    color: #333;
+    border: 2px solid #e1e1e1;
+}
+
+    .btn-primary:hover {
+        background-color: #ccc; /* Slightly darker platinum */
+        color: #333;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+/* Product image styling */
+.table img {
+    max-width: 120px;
+    max-height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+    /* Hover effect for product images */
+    .table img:hover {
+        transform: scale(1.1); /* Slight zoom effect on hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .table {
+        width: 100%;
+        margin: 20px;
+    }
+
+        .table th, .table td {
+            font-size: 14px;
+            padding: 12px;
+        }
+
+    h2 {
+        font-size: 30px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .table img {
+        max-width: 100px;
+        max-height: 100px;
+    }
+}

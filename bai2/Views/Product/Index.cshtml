@@ -1,0 +1,39 @@
+﻿@model IEnumerable<bai2.Models.Product>
+<h2>Products</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Name</th>
+<th>Price</th>
+<th>Description</th>
+<th>Images</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody>
+@foreach (var product in Model)
+{
+<tr>
+                <td>@product.Name</td>
+                <td>@product.Price</td>
+                <td>@product.Description</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(product.ImageUrl))
+                    {
+                        <img src="@product.ImageUrl" alt="Product Image" style="max-width: 100px; max-height: 100px; object-fit: cover;" />
+                    }
+                    else
+                    {
+                        <span>No Image</span> 
+                    }
+                </td>
+                <td>
+                    <a asp-action="Display" asp-route-id="@product.Id">View</a> |
+                    <a asp-action="Update" asp-route-id="@product.Id">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@product.Id">Delete</a>|
+                    <a asp-action="Add" asp-route-id="@product.Id">Add Product</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
